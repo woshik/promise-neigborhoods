@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise Neigborhoods - Registration</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/registration.css" />
+  </head>
+
+  <body>
+    <section class="banner">
+      <nav>
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./registration.html" class="active">Register</a></li>
+          <li><a href="./alumni.html">Alumni</a></li>
+        </ul>
+      </nav>
+      <div class="banner-header-text d-flex flex-row">
+        <div class="logo">
+          <img src="./assets/image/logo.png" alt="logo" />
+        </div>
+        <h1>Join Us</h1>
+      </div>
+    </section>
+    <section class="form p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="nav nav-pills tab-bar mb-4" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link active"
+                  id="member-tab"
+                  data-toggle="pill"
+                  href="#member"
+                  role="tab"
+                  aria-controls="member"
+                  aria-selected="true"
+                  >BECOME A MEMBER</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="sopnsor-tab"
+                  data-toggle="pill"
+                  href="#sopnsor"
+                  role="tab"
+                  aria-controls="sopnsor"
+                  aria-selected="false"
+                  >BECOME A SPONSOR</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="your-city-tab"
+                  data-toggle="pill"
+                  href="#your-city"
+                  role="tab"
+                  aria-controls="your-city"
+                  aria-selected="false"
+                  >BRING TO YOUR CITY</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div
+                class="tab-pane fade show active"
+                id="member"
+                role="tabpanel"
+                aria-labelledby="member-tab"
+              >
+                <form id="member-form">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Phone number"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Address"
+                    />
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="City"
+                      />
+                    </div>
+                    <div class="form-group col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="State"
+                      />
+                    </div>
+                    <div class="form-group col-md-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Zip code"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group mt-4">
+                    <textarea
+                      class="form-control"
+                      rows="7"
+                      placeholder="What does leadership mean to you?"
+                    ></textarea>
+                  </div>
+
+                  <div class="form-group mt-5">
+                    <textarea
+                      class="form-control"
+                      rows="7"
+                      placeholder="What do you need to heal within yourself so you may be the best leader possible?"
+                    ></textarea>
+                  </div>
+
+                  <div class="form-group mt-5">
+                    <textarea
+                      class="form-control"
+                      rows="7"
+                      placeholder="Where do you see yourself in the next 5 years?"
+                    ></textarea>
+                  </div>
+
+                  <div class="form-group mt-5">
+                    <textarea
+                      class="form-control"
+                      rows="7"
+                      placeholder="What barriers exist that would prevent you from being successful?"
+                    ></textarea>
+                  </div>
+
+                  <div class="form-group mt-5">
+                    <textarea
+                      class="form-control"
+                      rows="7"
+                      placeholder="How can we help you achieve success?"
+                    ></textarea>
+                  </div>
+
+                  <button class="btn banner-button mt-5">
+                    Register Now
+                    <i
+                      class="arrow right"
+                      style="padding: 4px; margin-left: 8px"
+                    ></i>
+                  </button>
+                </form>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="sopnsor"
+                role="tabpanel"
+                aria-labelledby="sopnsor-tab"
+              >
+                <form id="sopnsor-form">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Phone number"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Address"
+                    />
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="City"
+                      />
+                    </div>
+                    <div class="form-group col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="State"
+                      />
+                    </div>
+                    <div class="form-group col-md-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Zip code"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Company name"
+                    />
+                  </div>
+
+                  <button class="btn banner-button mt-5">
+                    Register Now
+                    <i
+                      class="arrow right"
+                      style="padding: 4px; margin-left: 8px"
+                    ></i>
+                  </button>
+                </form>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="your-city"
+                role="tabpanel"
+                aria-labelledby="your-city-tab"
+              >
+                <form id="your-city-form">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Phone number"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Address"
+                    />
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="City"
+                      />
+                    </div>
+                    <div class="form-group col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="State"
+                      />
+                    </div>
+                    <div class="form-group col-md-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Zip code"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group mt-4">
+                    <textarea
+                      class="form-control"
+                      rows="7"
+                      placeholder="What does leadership mean to you?"
+                    ></textarea>
+                  </div>
+
+                  <button class="btn banner-button mt-5">
+                    Register Now
+                    <i
+                      class="arrow right"
+                      style="padding: 4px; margin-left: 8px"
+                    ></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

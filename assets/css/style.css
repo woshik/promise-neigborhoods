@@ -1,0 +1,609 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:focus {
+  outline: 0 !important;
+  border: 0 !important;
+}
+
+.arrow {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* banner start */
+.logo {
+  position: absolute;
+  left: 10rem;
+  top: 50px;
+}
+.logo img {
+  width: 250px;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: transparent
+    linear-gradient(87deg, #ffffff 0%, #f4f6f7 28%, #fff0f0 100%) 0% 0%
+    no-repeat padding-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* nav var style */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 50px 35px 20px 35px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  color: #505050;
+  transition: color 0.5s ease;
+  position: relative;
+}
+
+nav ul li a.active {
+  color:  #b74e64;
+  border-bottom: 3px solid  #b74e64;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color:  #b74e64;
+}
+
+nav ul li a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -3px;
+  height: 3px;
+  width: 0;
+  background-color:  #b74e64;
+  transition: width 0.25s ease;
+}
+
+nav ul li a:not(.active):hover::after {
+  width: 100%;
+}
+
+/* nav var style */
+
+/* banner head text */
+
+.banner-header-text {
+  margin-top: 25px;
+}
+
+.banner-header-text h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #37316c;
+  font-size: 80px;
+  font-weight: bolder;
+}
+
+/* banner head text */
+
+.banner-body-text {
+  max-width: 1093px;
+  height: 299px;
+  background: #d18a62 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 50px 192px 50px 57px;
+  /* margin-top: 60px; */
+}
+
+.banner-body-text p {
+  color: #fff;
+  font-size: 28px;
+  width: 90%;
+}
+
+.banner-image {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.banner-image img {
+  height: 95vh;
+}
+
+.banner-button {
+  border: 0;
+  outline: unset !important;
+  background:  #b74e64 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 24px;
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+
+/* banner end */
+
+.feature,
+.footer,
+.purpose,
+.process,
+.faq,
+.video {
+  padding: 100px 0;
+}
+
+.feature-bg {
+  background-color: #37316c;
+}
+
+.background-img1 {
+  position: absolute;
+  background-image: url("../assets/image/bg.png");
+  background-repeat: no-repeat;
+}
+
+.spotlight-header {
+  font-size: 28px;
+  color: #37316c;
+  text-transform: uppercase;
+}
+
+.spotlight-address {
+  font-size: 30px;
+  color: #37316c;
+  text-transform: capitalize;
+}
+
+.featurette-heading {
+  font-size: 50px;
+  color: #37316c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.featurette-img {
+  position: absolute;
+}
+
+.lead {
+  font-size: 24px;
+  color: #37316c;
+  text-transform: capitalize;
+}
+
+.read-more a {
+  font-size: 20px;
+  color: #37316c;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-1 {
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header-2 {
+  font-size: 50px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.lead-2 {
+  text-align: justify;
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.btn-link-custom {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0;
+}
+
+.img-border {
+  border: 1px solid #707070;
+  border-radius: 100%;
+}
+
+.location {
+  text-align: center;
+}
+.btn-register {
+  background-color: #b74e64;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 15px;
+  width: 243px;
+  height: 65px;
+  position: absolute;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  bottom: -50px;
+}
+.location-img {
+  width: 286px;
+  height: 286px;
+}
+
+.cocacola-logo {
+  max-width: 100%;
+}
+
+.btn-sponsor {
+  background-color: #b74e64;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 15px;
+  padding: 20px;
+  width: 243px;
+  height: 65px;
+}
+
+.purpose p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #37316c;
+}
+.process-bg {
+  background-color: #d18a62;
+}
+.process p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+}
+.payoff {
+  padding: 100px 0 0;
+  overflow-x: hidden;
+}
+.payoff p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #37316c;
+}
+.faq {
+  color: #fff;
+}
+.faq .heading {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.faq-bg {
+  background-color: #37316c;
+}
+.video-block {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+.about-banner {
+  width: 100%;
+  padding-bottom: 150px;
+  background: transparent
+    linear-gradient(87deg, #ffffff 0%, #f4f6f7 28%, #fff0f0 100%) 0% 0%
+    no-repeat padding-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.about-top-text {
+  max-width: 1093px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  color: #37316c;
+  text-align: center;
+}
+.about-top-text p {
+  color: #37316c;
+  font-size: 21px;
+  width: 90%;
+  margin: 0 auto;
+}
+.bg-image {
+  position: absolute;
+  right: -170px;
+  bottom: -360px;
+}
+.bg-image img {
+  width: 580px;
+}
+.video-player iframe {
+  width: 800px;
+  height: 500px;
+}
+.round-img {
+  width: 65%;
+  margin: 0 auto;
+  display: block;
+}
+.faq .box h2 {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.faq .box p {
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+img.about-footer-logo {
+  max-width: 30%;
+}
+.bg-image-2 {
+  position: absolute;
+  left: -130px;
+  bottom: -100px;
+}
+.bg-image-2 img {
+  width: 580px;
+}
+.bg-image-3 {
+  position: absolute;
+  right: -140px;
+  top: -370px;
+}
+.bg-image-3 img {
+  width: 580px;
+}
+.about-images img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1599.98px) {
+  .banner-image {
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1439.98px) {
+  .banner-image {
+    right: 0;
+  }
+  .banner-image img {
+    height: 90vh;
+  }
+  .logo {
+    left: 110px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1359.98px) {
+  .logo {
+    left: 55px;
+  }
+  .banner-image {
+    right: 0;
+  }
+  .banner-image img {
+    height: 85vh;
+  }
+  .banner-body-text p {
+    width: 85%;
+  }
+  .banner-header-text h1 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 1199.98px) { 
+  .logo {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  nav ul {
+    margin-top: 140px;
+  }
+  nav ul li {
+    padding: 50px 10px 20px;
+  }
+  .banner {
+    height: 750px;
+  }
+  .banner-image {
+    display: none;
+  }
+  .banner-button {
+    padding: 23px 18px;
+    font-size: 20px;
+  }
+  .banner-header-text h1 {
+    font-size: 40px;
+  }
+  .banner-body-text {
+    max-width: 850px;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+  }
+  .banner-body-text p {
+    font-size: 21px;
+    width: 100%;
+    text-align: center;
+  }
+  .cocacola-logo {
+    margin-bottom: 30px;
+  }
+  .video-player iframe {
+    width: 500px;
+    height: 350px;
+  }
+  .bg-image,
+  .bg-image-1,
+  .bg-image-2,
+  .bg-image-3 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  nav ul {
+    margin-top: 140px;
+  }
+  nav ul li {
+    padding: 50px 10px 20px;
+  }
+  .banner {
+    height: 750px;
+  }
+  .banner-image {
+    display: none;
+  }
+  .banner-button {
+    padding: 23px 18px;
+    font-size: 20px;
+  }
+  .banner-header-text h1 {
+    font-size: 40px;
+  }
+
+  .banner-body-text {
+    max-width: 750px;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+  }
+  .banner-body-text p {
+    font-size: 21px;
+    width: 100%;
+    text-align: center;
+  }
+  .cocacola-logo {
+    margin-bottom: 30px;
+  }
+  .video-player iframe {
+    width: 500px;
+    height: 350px;
+  }
+  .bg-image,
+  .bg-image-1,
+  .bg-image-2,
+  .bg-image-3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  nav ul {
+    margin-top: 100px;
+  }
+  nav ul li {
+    padding: 50px 10px 20px;
+  }
+  .banner {
+    height: 660px;
+  }
+  .banner-image {
+    display: none;
+  }
+  .banner-button {
+    padding: 23px 18px;
+    font-size: 20px;
+  }
+  .banner-header-text h1 {
+    font-size: 40px;
+  }
+  .banner-body-text {
+    max-width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+  }
+  .banner-body-text p {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+  .cocacola-logo {
+    margin-bottom: 30px;
+  }
+  .video-player iframe {
+    width: 300px;
+    height: 200px;
+  }
+  .featurette.p-4 {
+    padding: 0 !important;
+  }
+  .spotlight-header,
+  .featurette-heading,
+  .spotlight-address,
+  .lead,
+  .read-more {
+    text-align: center;
+  }
+  .bg-image {
+    display: none;
+  }
+  .graph {
+    display: none;
+  }
+  .about-banner {
+    padding-bottom: 50px;
+  }
+  img.about-footer-logo {
+    max-width: 100%;
+  }
+  .bg-image,
+  .bg-image-1,
+  .bg-image-2,
+  .bg-image-3 {
+    display: none;
+  }
+  .about-images img {
+    max-width: 80%;
+    margin: 15px auto;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767.98px) {
+  nav ul {
+    margin-top: 140px;
+  }
+}

@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  background: transparent
+    linear-gradient(87deg, #ffffff 0%, #f4f6f7 28%, #fff0f0 100%) 0% 0%
+    no-repeat padding-box;
+  min-height: 100%;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:focus {
+  outline: 0 !important;
+  border: 0 !important;
+}
+
+.arrow {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* banner start */
+.logo {
+  position: absolute;
+  left: 10rem;
+  top: 50px;
+}
+.logo img {
+  width: 250px;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* nav var style */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 50px 35px 20px 35px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  color: #505050;
+  transition: color 0.5s ease;
+  position: relative;
+}
+
+nav ul li a.active {
+  color: #b74e64;
+  border-bottom: 3px solid #b74e64;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #b74e64;
+}
+
+nav ul li a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -3px;
+  height: 3px;
+  width: 0;
+  background-color: #b74e64;
+  transition: width 0.25s ease;
+}
+
+nav ul li a:not(.active):hover::after {
+  width: 100%;
+}
+
+/* nav var style */
+
+/* banner head text */
+
+.banner-header-text {
+  margin-top: 25px;
+}
+
+.banner-header-text h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #37316c;
+  font-size: 80px;
+  font-weight: bolder;
+}
+
+/* alumni style start */
+.alumni-search {
+  letter-spacing: 0px;
+  color: #37316c;
+  width: 470px;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  border: 1px solid gray;
+  border-radius: 14px;
+}
+
+.alumni-search:focus {
+  outline: 0;
+}
+
+.card {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-body {
+  padding: 14px 18px;
+  border-radius: 0 15px 15px 0;
+  border: 3px solid #dd9166;
+  border-left: 0;
+}
+
+/* alumni style end */
+
+/* model style */
+.modal {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modal-content {
+  background: transparent;
+  border: 0;
+}
+
+.modal-header button {
+  outline: 0;
+  border: 0;
+  text-align: right;
+  font: normal normal bold;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #37316c;
+  text-transform: uppercase;
+}
+
+.modal-body {
+  background: #fff;
+}
+
+.modal-body {
+  width: 100%;
+  height: 100%;
+}
+
+img.social-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1599.98px) {
+  .logo img {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1439.98px) {
+  .logo {
+    left: 110px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1359.98px) {
+  .logo {
+    left: 55px;
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .logo {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  nav ul {
+    margin-top: 140px;
+  }
+  nav ul li {
+    padding: 50px 10px 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  nav ul {
+    margin-top: 140px;
+  }
+  nav ul li {
+    padding: 50px 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  nav ul {
+    margin-top: 100px;
+  }
+  nav ul li {
+    padding: 50px 10px 20px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767.98px) {
+  nav ul {
+    margin-top: 140px;
+  }
+}
