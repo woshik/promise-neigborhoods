@@ -6,7 +6,7 @@
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: transparent
     linear-gradient(87deg, #ffffff 0%, #f4f6f7 28%, #fff0f0 100%) 0% 0%
     no-repeat padding-box;
